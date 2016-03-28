@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="leo.com.lazyloadfragment.MainActivity">
+
+
+
+    <leo.com.lazyloadfragment.weight.PagerSlidingTabStrip xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pts_tab"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorAccent"
+        app:pstsDividerColor="@color/trans"
+        app:pstsIndicatorColor="@color/white"
+        app:pstsShouldExpand="true"
+        app:pstsIndicatorHeight="8dp"
+        app:underlineBottom="5dp"
+        app:pstsTabTextColor="@color/white"/>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        style="@style/fill_fill" />
+
+
+</LinearLayout>
